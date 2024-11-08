@@ -1,0 +1,8 @@
+/* Feed Selected */
+.menu-btn:nth-child(2) {
+  border-left: 5px solid var(--secondary);
+}
+.menu-btn:nth-child(2) * {
+  fill: var(--secondary);
+  color: var(--secondary);
+}

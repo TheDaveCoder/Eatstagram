@@ -1,0 +1,115 @@
+section {
+  height: 100vh;
+  width: 100%;
+  background-color: var(--primary);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: var(--font-dark);
+}
+
+section > * {
+  margin: 1rem 0;
+}
+
+.logo {
+  width: 10em;
+}
+
+.introductory-text {
+  font-size: 2rem;
+}
+
+#eats {
+  color: #e2b01f;
+}
+
+#tagram {
+  color: #42271c;
+}
+
+.login-portal-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-portal-container > * {
+  margin: 0 3rem;
+}
+
+.login-portal {
+  padding: 1.5rem;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  border-radius: 25px;
+  height: 37.5rem;
+  width: 25rem;
+}
+
+.login-portal * {
+  margin: 0.35rem 0;
+}
+
+.label-class {
+  margin-left: 2.65rem;
+}
+
+.icon-and-inputbox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.username-icon {
+  width: 1.5rem;
+}
+.username-icon > svg > path{
+  fill: var(--font-dark);
+}
+
+.text-box {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 3px solid #e2b01f;
+  width: 87.5%;
+  padding: 0.5rem;
+}
+
+.username-logo {
+  background-image: url('buyer.jpg');
+}
+.login-logo {
+  width: 12.5rem;
+  height: 12.5rem;
+  border-radius: 100px;
+  background-position: center;
+  background-size: cover;
+}
+
+.login-portal-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.login-submit {
+  border: none;
+  background-color: #e2b01f;
+  width: 100%;
+  padding: 0.75rem 0;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.sign-up-link {
+  color: #bda49b;
+}
+
+.link {
+  color: #e2b01f;
+}
+
+.cook-logo {
+  background-image: url('seller.jpg');
+}

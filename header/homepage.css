@@ -1,0 +1,387 @@
+body {
+  background-color: var(--primary);
+}
+
+nav {
+  z-index: 5;
+  background-color: var(--secondary);
+  width: 100%;
+  position: fixed;
+  height: 3.75rem;
+  padding: 0 4rem;
+  top: 0;
+
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav > * {
+  color: var(--primary);
+}
+
+nav svg {
+  height: 1.75rem;
+}
+
+.logo {
+  font-size: 1.75rem;
+}
+
+.nav-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-left-icons {
+  margin-left: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+button {
+  background-color: var(--secondary);
+  border: none;
+  cursor: pointer;
+}
+.nav-left-icons > *{
+  margin: 0 0.5rem;
+}
+.nav-left-icons path {
+  fill: var(--primary);
+}
+
+.nav-right {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.searchbar {
+  height: 100%;
+  width: 75%;
+  background-color: var(--primary);
+  display: flex;
+  padding: 0.5rem 1rem;
+  justify-content: flex-flex-start;
+  align-items: center;
+  border-radius: 25px;
+}
+
+.searchbar > input {
+  width: 100%;
+  margin-left: 1rem;
+  border: none;
+  background-color: var(--primary);
+}
+
+.searchbar path {
+  fill: #bda49b;
+}
+
+.searchbar > input:focus {
+  outline: none;
+}
+
+.profile {
+  border-radius: 100%;
+  margin-left: 2rem;
+  background-image: url(blank-profile.png);
+  height: 2.5rem;
+  width: 2.5rem;
+  background-position: center;
+  background-size: cover;
+  border: none;
+  cursor: pointer;
+}
+
+/* sidebar left */
+
+.home-left {
+  z-index: 1;
+  padding-top: 1.25rem;
+  position: fixed;
+  top: 3.75rem;
+  left: 0;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  width: 20%;
+  height: 100vh;
+  background-color: var(--primary);
+}
+.content-menu-container {
+  width: 100%;
+}
+
+.homepage *{
+  padding: 0.25rem 0;
+}
+
+.home-left-title {
+  padding-left: 3rem;
+  color: #bda49b;
+}
+
+.menu-btn-container > * {
+  padding: 0 3rem;
+}
+
+.menu-btn {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 1rem 3rem;
+  text-decoration: none;
+  color: black;
+}
+.menu-btn:hover {
+  background-color: rgba(226, 176, 30, 0.53);
+}
+
+.liked-canteens > * {
+  padding: 1rem 3rem;
+}
+
+.liked-canteen {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.liked-canteen-name {
+  margin-left: 1rem;
+}
+
+.liked-canteen-pic {
+  height: 2rem;
+  width: 2rem;
+  border-radius: 20%;
+  background-position: center;
+  background-size: cover;
+}
+
+.c1 {
+  background-image: url('canteen1.jpg');
+}
+.c2 {
+  background-image: url('canteen2.jpg');
+}
+.c3 {
+  background-image: url('canteen3.jpg');
+}
+
+.icon {
+  width: 2rem;
+  height: 2rem;
+}
+
+.menu-btn > p {
+  margin-left: 1rem;
+}
+
+/* sidebar right */
+.home-right {
+  z-index: 1;
+  padding-top: 1.25rem;
+  position: fixed;
+  top: 3.75rem;
+  right: 0;
+  padding-left: 3rem;
+  width: 20%;
+  height: 100vh;
+  background-color: var(--primary);
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+.home-right *{
+  margin: 0.25rem 0;
+}
+
+.following {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.friend {
+  display: flex;
+  align-items: center;
+}
+
+.friend-icon {
+  border-radius: 100%;
+  margin-right: 1rem;
+  background-image: url(blank-profile.png);
+  height: 2.5rem;
+  width: 2.5rem;
+  background-position: center;
+  background-size: cover;
+}
+
+.Followers {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.home-right-title {
+  color: #bda49b;
+}
+
+/* Account Menu Popup */
+.account-menu {
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.5);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+.account-menu.activate {
+  display: flex;
+}
+.account-menu * {
+  color: var(--font-dark);
+}
+.popup {
+  position: relative;
+  width: 40%;
+  height: 45%;
+  background-color: var(--primary);
+  border-radius: 10px;
+
+  display: flex;
+  padding: 2rem;
+}
+.profile-pic-container {
+  width: 30%;
+  height: 70%;
+  border-right: 1px solid black;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.profile-pic {
+  border-radius: 100%;
+  background-image: url(blank-profile.png);
+  height: 10rem;
+  width: 10rem;
+  background-position: center;
+  background-size: cover;
+  border: none;
+}
+.profile-info {
+  margin-left: 2rem;
+}
+.greetings>p {
+  color: var(--secondary);
+}
+.greetings>p {
+  font-size: 3rem;
+}
+.more-info {
+  font-size: 1.25rem;
+}
+.popup-menu {
+  position: absolute;
+  bottom: 5%;
+  left: 0;
+  width: 100%;
+  height: 15%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-menu > * {
+  margin: 0 5%;
+}
+
+.popup-menu-button {
+  text-align: center;
+  padding: 2% 0;
+  width: 25%;
+  background-color: var(--secondary);
+  color: var(--primary);
+  border: none;
+  text-decoration: none;
+
+  cursor: pointer;
+  border-radius: 10px;
+  font-size: 1rem;
+}
+
+/* Scroll */
+body::-webkit-scrollbar {
+  width: 12px;
+  height: 100%;
+}
+body::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: var(--primary);
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #e78632;
+  background-image:-webkit-linear-gradient(45deg,rgba(255,255,255,.3) 20%,transparent 20%,transparent 40%,rgba(255, 255, 255, 0.3) 40%,rgba(255,255,255,.3) 60%,transparent 60%,transparent 80%,rgba(255, 255, 255, 0.3) 80%);
+  border-radius: 10px;
+}
+
+/* Content Default */
+.content-type {
+  height: 100vh;
+  width: 100%;
+  background-color: var(--primary);
+  margin-top: 3.75rem;
+
+  display: flex;
+  justify-content: center;
+}
+.content-item {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content-item > p {
+  font-size: 7rem;
+  text-align: center;
+}
+
+.temp-error {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 500;
+  background-color: rgba(226, 176, 30);
+  top: 0;
+  left: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+
+  transition: 0.5s ease;
+}
+.temp-error.errScrActive {
+  display: flex;
+  transition: 0.5s ease;
+}
+.temp-error > p{
+  font-size: 7rem;
+  text-align: center;
+}

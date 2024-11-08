@@ -1,0 +1,8 @@
+/* Favorites Selected */
+.menu-btn:nth-child(3) {
+  border-left: 5px solid var(--secondary);
+}
+.menu-btn:nth-child(3) * {
+  fill: var(--secondary);
+  color: var(--secondary);
+}

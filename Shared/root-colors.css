@@ -1,0 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Vanilla Extract';
+}
+
+:root {
+  --primary: #fef9dc;
+  --secondary: #e2b01f;
+  --font-dark: #47342d;
+}
